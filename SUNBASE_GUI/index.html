@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./images/icons8-customer-50.png" />
+    <title>Customer - Details</title>
+    <link rel="stylesheet" href="LoginStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap">
+</head>
+<body>
+    <!-- <h2 style="margin-top: 200px; margin-left: 680px;">Customer Details</h2> -->
+    <!-- <i class='bx bxs-user'></i> -->
+    <div class="main-div  mainDiv">
+    <form action="" method="post">
+        <h1 style="margin-bottom: 50px;">Login-Page</h1>
+       
+            <div class="input-group">
+                <div class="input">
+                    <input type="text" id="username" required>
+                    <i class='bx bxs-user'></i>
+                    <label for="login">Login-ID</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="password" required>
+                    <i class='bx bx-rename' ></i>
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            
+            <button type="button" class="btn" id="loginBtn">Submit</button>
+    </form>
+</div>
+
+
+<div class="verify-otp" id ="verify-otp"></div>
+
+
+<div class="welcome">
+    <!-- <div>
+        <h1>Welcome</h1>
+        <button id="details" class="btn">Customer Details</button>
+    </div>  -->
+</div>
+<!-- <div class="verify-otp" id ="verify-otp"></div> -->
+
+<main id="main" class="customerList"></main>
+
+
+
+<div class="main-div addCustomers" id="customer">
+    <form action="" method="post">
+        <h1>Add Customer</h1>
+       
+            <div class="input-group">
+                <div class="input1" id="input1">
+                    <input type="text" id="fname" required>
+                    <i class='bx bxs-user'></i>
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="input1" id="input1">
+                    <input type="text" id="lname" required>
+                    <i class='bx bx-rename' ></i>
+                    <label for="lname">Last Name</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input1" id="input1">
+                    <input type="text" id="street" required>
+                    <i class='bx bx-street-view' ></i>
+                    <label for="street">Street</label>
+                </div>
+                <div class="input1" id="input1">
+                    <input type="text" id="address" required>
+                    <i class='bx bx-broadcast' ></i>
+                    <label for="address">Address</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input1" id="input1">
+                    <input type="text" id="city" required>
+                    <i class='bx bxs-city' ></i>
+                    <label for="city">City</label>
+                </div>
+                <div class="input1" id="input1">
+                    <input type="text" id="state" required>
+                    <i class='bx bxs-home' ></i>
+                    <label for="state">State</label>
+                </div>
+            </div>
+            <div class="input-group" id="input1">
+                <div class="input1">
+                    <input type="email" id="email" required>
+                    <i class='bx bx-envelope' ></i>
+                    <label for="email-id">Email-ID</label>
+                </div>
+                <div class="input1" id="input1">
+                    <input type="number" id="phone" required>
+                    <i class='bx bxs-phone' ></i>
+                    <label for="phone-number">Phone Number</label>
+                </div>
+            </div>
+            <label style="color:#b1aeae;"><input type="checkbox" >I hereby declare that the above information provided is true and correct</label>
+            <button type="submit" class="btn" id="customerBtn">Submit</button>
+    </form>
+</div>
+
+
+<Search id="response"></Search>
+<script src="./script.js"></script>
+</body>
+</html>
